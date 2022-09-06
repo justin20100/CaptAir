@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name'); ?></title>
+    <link rel="icon" href="../../uploads/2022/09/logo_captair.png">
     <link rel="stylesheet" type="text/css" href="<?= captair_mix('css/style.css'); ?>"/>
     <?php wp_head(); ?>
 </head>
@@ -45,7 +46,7 @@
             <ul class="nav__list">
                 <?php foreach (captair_get_menu_items('primary') as $link): ?>
                     <li class="<?= $link->getBemClasses('nav__item'); ?>">
-                        <a href="<?= $link->url; ?>" <?= $link->title ? ' title="' . $link->title . '"' : ''; ?>class="nav__link"><?= $link->label; ?></a>
+                        <a href="<?= $link->url; ?>" <?= $link->title ? ' title="' . $link->title . '"' : ''; ?>class="nav__link animatedLink"><?= $link->label; ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>

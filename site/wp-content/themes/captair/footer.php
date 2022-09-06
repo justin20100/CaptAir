@@ -16,7 +16,7 @@
                 <ul class="footer__list">
                     <?php foreach (captair_get_menu_items('primary') as $link): ?>
                         <li class="footer__item">
-                            <a href="<?= $link->url; ?>" <?= $link->title ? ' title="' . $link->title . '"' : ''; ?>class="footer__link"><?= $link->label; ?></a>
+                            <a href="<?= $link->url; ?>" <?= $link->title ? ' title="' . $link->title . '"' : ''; ?>class="footer__link animatedLink"><?= $link->label; ?></a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
@@ -27,21 +27,21 @@
                     <li class="footer__item"><a href="mailto:valery.broun@hepl.be" class="footer__link animatedLink">valery.broun@hepl.be</a></li>
                     <li class="footer__item"><a href="mailto:sylvain.guichaux@hepl.be" class="footer__link animatedLink">sylvain.guichaux@hepl.be</a></li>
                     <li class="footer__item"><a href="mailto:christophe.brose@hepl.be" class="footer__link animatedLink">christophe.brose@hepl.be</a></li>
-                    <li class="footer__item"><a href="https://www.hepl.be/fr" class="footer__link animatedLink">Site web</a></li>
+                    <li class="footer__item"><a href="https://www.hepl.be/fr"target="_blank" class="footer__link animatedLink">Site web</a></li>
                 </ul>
             </div>
             <div class="footer__part">
                 <h3 class="footer__subtitle">ISSEP</h3>
                 <ul class="footer__list">
                     <li class="footer__item"><a href="mailto:f.lenartz@issep.be" class="footer__link animatedLink">f.lenartz@issep.be</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link animatedLink">Site web</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link animatedLink">Linkedin</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link animatedLink">Facebook</a></li>
+                    <li class="footer__item"><a href="https://www.issep.be"target="_blank" class="footer__link animatedLink">Site web</a></li>
+                    <li class="footer__item"><a href="https://be.linkedin.com/company/issep"target="_blank" class="footer__link animatedLink">Linkedin</a></li>
+                    <li class="footer__item"><a href="https://www.facebook.com/Institut.Issep/"target="_blank" class="footer__link animatedLink">Facebook</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__mentions reveal-2">
-            <a href="<?= get_the_permalink(captair_get_template_page('template-mentions')); ?>" class="footer__mentionsLink">Mention légales</a>
+            <a href="<?= get_the_permalink(captair_get_template_page('template-mentions')); ?>" class="footer__mentionsLink animatedLink">Mention légales</a>
         </div>
     </section>
     <script type="text/javascript" src="<?= captair_mix('js/script.js'); ?>"></script>

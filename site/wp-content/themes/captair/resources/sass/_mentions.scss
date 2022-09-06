@@ -1,0 +1,20 @@
+.layout_mentions{
+  margin: calc-em(180,16) calc-em(100,16);
+}
+.mentions__title{
+  font-size: calc-em(64,16);
+  text-align: center;
+  margin-bottom: calc-em(50,64);
+}
+.mentions__subtitle{
+  font-size: calc-em(32,16);
+  margin-bottom: calc-em(50,32);
+}
+.mentions__text{
+  font-size: calc-em(20,16);
+  line-height: 1.2em;
+  letter-spacing: 0.13em;
+}
+.mentions__part{
+  margin-bottom: calc-em(80,16);
+}

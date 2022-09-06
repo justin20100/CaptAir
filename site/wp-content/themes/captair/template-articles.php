@@ -1,10 +1,11 @@
 <?php /* Template Name: articles template */ ?>
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?= wp_title('·', false, 'right') . get_bloginfo('name'); ?></title>
+        <link rel="icon" href="../../uploads/2022/09/logo_captair.png">
         <link rel="stylesheet" type="text/css" href="<?= captair_mix('css/style.css'); ?>"/>
         <?php wp_head(); ?>
     </head>
@@ -57,7 +58,7 @@
                 <?php foreach (captair_get_menu_items('primary') as $link): ?>
                     <li class="<?= $link->getBemClasses('nav__item'); ?>">
                         <a href="<?= $link->url; ?>"
-                           <?= $link->title ? ' title="' . $link->title . '"' : ''; ?>class="nav__link"><?= $link->label; ?></a>
+                           <?= $link->title ? ' title="' . $link->title . '"' : ''; ?>class="nav__link animatedLink"><?= $link->label; ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -79,7 +80,7 @@
                             <h3 class="article__title"><?= get_the_title() ?></h3>
                             <p class="article__description"><?= get_the_excerpt() ?></p>
                             <a href="<?= get_field('link')['url'] ?>"
-                               class="article__link"><?= get_field('link')['title'] ?></a>
+                               class="article__link animatedLink" target="_blank"><?= get_field('link')['title'] ?></a>
                         </div>
                     </article>
                 <?php endwhile; ?>
