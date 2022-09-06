@@ -1,0 +1,31 @@
+.header__svg{
+  position: absolute;
+  top: -50px;
+  right: -200px;
+  z-index: -1;
+}
+.header__nav{
+  margin: calc-em(35,16) calc-em(100,16) 0;
+  position: relative;
+}
+.nav__container{
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list{
+  display: flex;
+  align-items: center;
+}
+.nav__link{
+  font-family: sflight,sans-serif;
+  color: $white;
+  font-size: calc-em(18,16);
+  letter-spacing: 0.05em;
+  margin-left: calc-em(60,18);
+}
+.nav__item:last-child a{
+  color: $black;
+  background-color: $white;
+  padding: calc-em(5,18) calc-em(15,18);
+  border-radius: calc-em(20,18);
+}

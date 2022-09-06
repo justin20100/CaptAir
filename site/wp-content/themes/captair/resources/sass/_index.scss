@@ -1,0 +1,119 @@
+.header__cta{
+  margin: calc-em(170,16) calc-em(100,16) calc-em(120,16) ;
+}
+.cta__container{
+  display: grid;
+  grid-template-columns: 55% 43%;
+  grid-gap: 2%;
+}
+.cta__title{
+  font-size: calc-em(64,16);
+  letter-spacing: 0.12em;
+  margin-bottom: calc-em(80,64);
+}
+.cta__description{
+  font-size: calc-em(24,16);
+  letter-spacing: 0.12em;
+  color: $grey;
+  margin-bottom: calc-em(30,24);
+}
+.cta__img{
+  width: 100%;
+}
+.cta__logos{
+  display: flex;
+  align-items: center;
+}
+.cta__logo{
+  width: 60px;
+  margin-right: 1em;
+}
+
+
+/* ----- Captair ------ */
+.layout__captair{
+  margin: 0 calc-em(100,16) calc-em(180,16);
+}
+.captair__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.captair__img{
+  margin-bottom: calc-em(80,16);
+}
+.captair__text{
+  font-size: calc-em(20,16);
+  line-height: calc-em(24,20);
+  letter-spacing: 0.13em;
+  width: 90%;
+  margin-bottom: calc-em(90,20);
+  text-align: center;
+}
+
+/* ----- collabo ----- */
+.layout__collabo{
+  margin: 0 calc-em(100,16) calc-em(180,16);
+}
+.collabo__container{
+  background-color: $lightgrey;
+  border-radius: calc-em(20,16);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.collabo__illustration{
+  position: relative;
+}
+.collabo__img{
+  border-radius: calc-em(20,16);
+  position: absolute;
+  top: 4em;
+  left: -8em;
+  width: clamp(34em, 29vw, 8959em);
+}
+.collabo__textContainer{
+  margin: calc-em(70,16) calc-em(70,16) calc-em(70,16) 0;
+}
+.collabo__title{
+  font-size: calc-em(48,16);
+  margin-bottom: calc-em(60,48);
+  letter-spacing: 0.05em;
+}
+.collabo__subtitle{
+  font-family: sfmedium,sans-serif;
+  font-size: calc-em(24,16);
+  margin-bottom: calc-em(20,24);
+  letter-spacing: 0.07em;
+}
+.collabo__text{
+  font-size: calc-em(20,16);
+  margin-bottom: calc-em(50,20);
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+}
+.callabo__textLast{
+  padding-bottom: calc-em(30,20);
+}
+
+/* -----  ----- */
+.layout__ctaContact{
+  margin: 0 calc-em(100,16) calc-em(180,16);
+}
+.ctaContact__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ctaContact__title{
+  font-size: calc-em(48,16);
+  margin-bottom: calc-em(60,48);
+  letter-spacing: 0.07em;
+}
+.ctaContact__text{
+  font-size: calc-em(20,16);
+  line-height: calc-em(26,20);
+  letter-spacing: 0.13em;
+  width: 50%;
+  text-align: center;
+  margin-bottom: calc-em(60,20);
+}

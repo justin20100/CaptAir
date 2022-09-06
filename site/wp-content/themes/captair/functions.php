@@ -109,7 +109,7 @@ function captair_get_modules($count = 20, $search = null)
     $modules = new Captair_CustomSearchQuery([
         'post_type' => 'module',
         'orderby' => 'date',
-        'order' => 'DESC',
+        'order' => 'ASC',
         'posts_per_page' => $count,
         's' => strlen($search) ? $search : null,
     ]);

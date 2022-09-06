@@ -1,0 +1,37 @@
+.footer__body{
+  position: relative;
+  margin:0 calc-em(100,16);
+}
+.footer__svg{
+  position: absolute;
+  bottom: 0;
+  left: -230px;
+  z-index: -1;
+}
+.footer__container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: calc-em(10,16);
+}
+.footer__subtitle{
+  font-size: calc-em(20,16);
+  color: $white;
+  margin-bottom: calc-em(20,20);
+}
+.footer__item{
+  margin: 0 0 calc-em(20,16)  calc-em(10,16);
+}
+.footer__link{
+  color: $white;
+  font-size: calc-em(18,16);
+  font-family: sflight,sans-serif;
+}
+
+.footer__mentions{
+  text-align: center;
+  font-family: sflight,sans-serif;
+  padding: calc-em(10,16) 0;
+}
+.footer__mentionsLink{
+  color: $white;
+}

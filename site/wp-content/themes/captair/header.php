@@ -10,8 +10,16 @@
 <body>
 <header class="header">
     <h1 class="header__title hidden"><?= get_bloginfo('name'); ?></h1>
-
     <nav class="header__nav nav">
+        <svg class="header__svg" width="1055" height="487" viewBox="0 0 1055 487" fill="none" >
+            <path d="M5.99982 121C-7.39069 85.5 -1.50003 19.5 68.6745 0H1031.5C1031.5 0 1082.5 74.5 1031.5 164.5C980.5 254.5 966 337.745 966 337.745C958 391 911.5 442 876.5 458C813.693 486.712 757.702 486 684.625 486C622.865 486 438.198 442.021 374 343.5C323.5 266 237.941 225.208 191.5 212C82.4999 181 19.3903 156.5 5.99982 121Z" fill="url(#paint0_linear_123_1535)"/>
+            <defs>
+                <linearGradient id="paint0_linear_123_1535" x1="758" y1="-72.5005" x2="594.022" y2="431.478" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#89AC26" stop-opacity="0.5"/>
+                    <stop offset="1" stop-color="#326FB5" stop-opacity="0.5"/>
+                </linearGradient>
+            </defs>
+        </svg>
         <h2 class="nav__title hidden">Navigation principale</h2>
         <div class="nav__container">
             <div class="nav__logo">

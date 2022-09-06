@@ -1,9 +1,64 @@
 @import "reset";
-
+@import "fonctions";
+@import "colors";
+@import "typos";
+@import "header";
+@import "index";
+@import "modules";
+@import "singlemodule";
+@import "articles";
+@import "footer";
 
 .hidden{
   position: absolute;
   left: 0;
   top: -10000px;
   overflow: hidden;
+}
+html{
+  overflow-x: hidden;
+}
+h1, h2, h3{
+  font-family: sfmedium,sans-serif;
+}
+p{
+  font-family: sflight,sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.abutton{
+  font-family: sflight,sans-serif;
+  font-size: calc-em(22,16);
+  letter-spacing: 0.1em;
+  padding: calc-em(18,22) calc-em(40,22);
+  background-color: $bleu;
+  color: $white;
+  border-radius: calc-em(20,22);
+  display: inline-block;
+}
+.abutton:hover{
+  animation: abutton 0.3s forwards ;
+}
+@keyframes abutton {
+  0% { transform: rotatex(0deg)}
+  30% { transform: rotateX(45deg) }
+  50% { transform: rotateX(0deg) }
+  80% { transform: rotateX(45deg) }
+  100% { transform: rotateX(0deg) }
+}
+header{
+  margin: 0 auto;
+  max-width: 1800px;
+}
+main{
+  margin: 0 auto;
+  max-width: 1800px;
+}
+footer{
+  margin: 0 auto;
+  max-width: 1800px;
+}
+strong{
+  color: $green;
 }
