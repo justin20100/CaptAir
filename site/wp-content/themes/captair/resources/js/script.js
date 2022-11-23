@@ -1,7 +1,6 @@
 class Captair_controller{
     constructor() {
-        // ici le dom n'est pas encore pret
-        // pour le moment rien a faire
+        console.log('le js est ok')
     }
     run(){
         console.log('coucou');
@@ -12,6 +11,7 @@ window.document.addEventListener('load',()=> window.captair.run());
 
 
 /* ----- on scroll animation ----- */
+/*
 const threshold = .1
 const options = {
     root: null,
@@ -36,4 +36,4 @@ window.addEventListener("DOMContentLoaded", function () {
     targets.forEach(function (target) {
         observer.observe(target)
     })
-})
+})*/
